@@ -1,5 +1,5 @@
 import Notes from "../Model/Notes.js";
-import cloudinary from "../Config/cloudinary.js";
+import cloudinary from "../Config/Cloudinary.js";
 import { incrementNotesCreated, incrementNotesUpdated, incrementNotesDeleted } from "../Controller/UserHelper.js";
 
 // 🔹 Create Note
