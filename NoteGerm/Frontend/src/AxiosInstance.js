@@ -1,13 +1,22 @@
 import axios from "axios";
 
+// const axiosInstance = axios.create({
+//   baseURL: "http://localhost:5000/api", 
+//   timeout: 20000,
+//   headers: {
+//     "Content-Type": "application/json"
+//   }
+// });
+
+
+
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:5000/api", 
+  baseURL: "https://notesmanagement-qit6.onrender.com/api", 
   timeout: 20000,
   headers: {
     "Content-Type": "application/json"
   }
 });
-
 
 axiosInstance.interceptors.request.use(
   (config) => {
