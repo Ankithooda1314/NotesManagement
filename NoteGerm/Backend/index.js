@@ -1,9 +1,9 @@
  import express from "express";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
-import connectDb from "./Config/Db.js";
+import connectDb from "./Config/db.js";
 import cors from "cors";
-import "./Config/cloudinary.js";
+import  "./Config/Cloudinary.js";
 
 import router from "./Route/index.js";
 
