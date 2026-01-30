@@ -13,6 +13,7 @@ import imageCompression from "browser-image-compression";
 
 const Notes = () => {
   const token = localStorage.getItem('token');
+  if (!token) return null;
   let nameLogin = null;
 
   if (token) {
