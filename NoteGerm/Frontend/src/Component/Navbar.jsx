@@ -5,7 +5,7 @@ import jwt_decode from "jwt-decode"; // make sure it's default import
 const Navbar = () => {
   const navigate = useNavigate();
   const token = localStorage.getItem('token');
-  if (!token) return null;
+  
 
   // ✅ declare variable outside if
   let nameLogin = "User";
