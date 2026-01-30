@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { LayoutDashboard, FileText } from 'lucide-react'
+import { LayoutDashboard, FileText, BarChart3 } from 'lucide-react'
+import { BarChart } from "lucide-react";
 
 const Slider = () => {
   return (
@@ -50,6 +51,26 @@ const Slider = () => {
             </span>
             {({isActive}) => isActive && (
               <ChevronRight className="ml-auto text-blue-400" size={16} />
+            )}
+          </NavLink>
+          <NavLink 
+            to="/graph" 
+            className={({isActive}) => 
+              `flex items-center space-x-3 px-4 py-3.5 rounded-xl transition-all duration-300 group ${
+                isActive 
+                  ? 'bg-gradient-to-r from-blue-900/50 to-blue-800/30 border-l-4 border-blue-500 shadow-lg' 
+                  : 'hover:bg-gray-700/50 hover:translate-x-1'
+              }`
+            }
+          >
+            <div className={`${({isActive}) => isActive ? 'text-blue-400' : 'text-gray-400 group-hover:text-blue-400'}`}>
+              <BarChart3 size={20} />
+            </div>
+            <span className={`font-medium ${({isActive}) => isActive ? 'text-blue-100' : 'text-gray-300 group-hover:text-white'}`}>
+              Graph
+            </span>
+            {({isActive}) => isActive && (
+              <BarChart3 className="ml-auto text-blue-400" size={16} />
             )}
           </NavLink>
         </div>

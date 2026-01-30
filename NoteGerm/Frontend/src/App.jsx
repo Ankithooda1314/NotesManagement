@@ -5,6 +5,7 @@ import SignupLogin from './Component/SignupLogin'
 import Slider from './Component/Slider/Slider'
 import Dashboard from './Component/UserDashBoard/Dashboard'
 import Notes from './Component/Notes/Notes'
+import Graph from './Component/Graph/Graph'
 import {ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
@@ -52,6 +53,7 @@ function App() {
             {/* Pages */}
             <Route path="dashboard" element={<Dashboard/>} />
             <Route path="notes" element={<Notes/>} />
+                <Route path="graph" element={<Graph/>} />
 
           </Route>
         </Route>
