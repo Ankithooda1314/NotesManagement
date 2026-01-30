@@ -9,10 +9,15 @@ import {ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 // Protected Route
+// const ProtectedRoute = () => {
+//   const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
+//   return isAuthenticated ? <Outlet /> : <Navigate to="/login" />;
+// };
+
 const ProtectedRoute = () => {
-  const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
-  return isAuthenticated ? <Outlet /> : <Navigate to="/login" />;
+  return <Outlet />;
 };
+
 
 const DashboardLayout = () => {
   return (
